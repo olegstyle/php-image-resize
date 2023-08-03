@@ -161,7 +161,7 @@ class ImageResize
             break;
 
         case IMAGETYPE_PNG:
-            $this->source_image = imagecreatefrompng($filename);
+            $this->source_image = @imagecreatefrompng($filename);
             break;
 
         case IMAGETYPE_WEBP:
